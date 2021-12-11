@@ -419,8 +419,23 @@ Hero
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-text {
+  text-align: center;
+  color: var(--white);
 }
 
+
+@media screen and (min-widith:768px) {
+  .hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+}
 
 /* 
 =============== 
