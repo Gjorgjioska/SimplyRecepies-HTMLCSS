@@ -317,13 +317,7 @@ Navbar
 
 .contact-link a {
   padding: 0.15rem 1rem;
-}
 
-.nav-links:hover {
-  color: var(--primary-500);
-}
-.contact-link a {
-  padding: 0.15rem 1rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -388,11 +382,17 @@ Footer
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   
 }
-.page-footer p{
+.page-footer h5 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.page-footer p {
   margin-bottom: 0;
 }
+
 .footer-logo, 
 .page-footer a {
   color: var(--primary-500);
@@ -430,7 +430,7 @@ Hero
 }
 
 
-@media screen and (min-widith:768px) {
+@media only screen and (min-widith:768px) {
   .hero-text h1 {
     font-size: 4rem;
     margin-bottom: 0;
@@ -445,11 +445,9 @@ Recipes
 .recipes-container {
   display: grid;
   gap: 2rem 1rem;
-  border: 2px solid red;
 }
 
 .tags-container {
-  border: 2px solid blue;
   order: 1;
   display: flex;
   flex-direction: column;
@@ -460,6 +458,7 @@ Recipes
   display: grid;
   gap: 2rem 1rem;
   padding-bottom: 3rem;
+  
 }
 .tags-container h4 {
   margin-bottom: 0.5rem;
@@ -469,7 +468,7 @@ Recipes
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.tags-list a{
+.tags-list a {
   text-transform: capitalize;
   display: block;
   color: var(--grey-500);
@@ -477,13 +476,73 @@ Recipes
 }
 .tags-list a:hover {
   color: var(--primary-500);
-  
-
-
 }
+.recipe {
+  display: block;
+}
+.recipe-img {
+  height: 15rem;
+  border-radius: var(--borderRadius);
+  margin-bottom: 1rem;
+}
+
+.recipe h5 {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+  line-height: 1;
+  color: var(--grey-700);
+}
+.recipe p {
+margin-bottom: 0;
+line-height: 1;
+margin-top: 0.5rem;
+color: var(--grey-500);
+letter-spacing: var(--letterSpacing);
+}
+
+@media screen and (min-width: 576px) {
+  .recipe-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .recipe-img {
+  height: 10rem;
+  }
+  
+}
+  
+@media screen and (min-width: 992px) {
+  .recipes-container{
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+  }
+  .recipes-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tags-container{
+    order: 0;
+  }
+  .tags-list {
+  grid-template-columns: 1fr;
+  display: grid;
+  }
+  .recipe p {
+    font-size: 0.85rem;
+
+  }
+}
+  
+@media screen and (min-width: 1200px) {
+  .recipe h5 {
+    font-size: 1.15rem;
+
+  }
+  .recipes-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 
 /* 
 =============== 
 
 ===============
-*/
