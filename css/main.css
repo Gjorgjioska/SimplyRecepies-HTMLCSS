@@ -546,7 +546,7 @@ letter-spacing: var(--letterSpacing);
 Error
 ===============
 */
-.error-page{
+.error-page {
   text-align: center;
   padding-top: 5rem;
 }
