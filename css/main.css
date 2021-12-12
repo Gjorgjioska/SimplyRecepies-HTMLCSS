@@ -477,7 +477,7 @@ Recipes
 .tags-list a:hover {
   color: var(--primary-500);
 }
-.recipe {
+.recipes {
   display: block;
 }
 .recipe-img {
@@ -486,18 +486,18 @@ Recipes
   margin-bottom: 1rem;
 }
 
-.recipe h5 {
+.recipes h5 {
   margin-bottom: 0;
   margin-top: 0.25rem;
   line-height: 1;
   color: var(--grey-700);
 }
-.recipe p {
-margin-bottom: 0;
-line-height: 1;
-margin-top: 0.5rem;
-color: var(--grey-500);
-letter-spacing: var(--letterSpacing);
+.recipes p {
+  margin-bottom: 0;
+  line-height: 1;
+  margin-top: 0.5rem;
+  color: var(--grey-500);
+  letter-spacing: var(--letterSpacing);
 }
 
 @media screen and (min-width: 576px) {
@@ -555,6 +555,9 @@ Error
 }
 /* 
 =============== 
-
+About
 ===============
 */
+.featured-title {
+
+}
