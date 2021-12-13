@@ -674,7 +674,7 @@ Single Recipe Page
 }
 .recipe-icons {
   display: grid;
-  grid-template-columns: repeat (3, 1fr );
+  grid-template-columns: repeat(3, 1fr );
   gap: 1rem;
   margin: 2rem, 0;
   text-align: center;
@@ -750,7 +750,26 @@ Single Recipe Page
   background: var(--grey-700);
 
 }
-.secont-column {
-  display: grid;
-  row-gap: 2rem;
+.second-column {
+  /* display: grid;
+  grid-template-rows: 2fr;
+  row-gap: 2rem; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-column div {
+  width: 49%;
+}
+
+.single-ingredient {
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--grey-700);
+}
+.single-tool {
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--primary-500);
+  text-transform: capitalize;
 }
